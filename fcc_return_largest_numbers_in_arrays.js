@@ -9,15 +9,16 @@ function largestOfFour(arr) {
         var _val = arr[i][0]; //get first element
         //loop from the 2nd item in the array
         for(j=1; j<=arr[i].length;j++) {
-            if(arr[i][j] > _val) {
+            //compare current pos item against last _val
+            if(arr[i][j] > _val) {              
                 _val = arr[i][j];
             }            
         }
-
+        //push the Largest number on this array into the result.
         highValues.push(_val);
     
   }
-  
+  //return high values array
   return highValues;
   
   
